@@ -1,1 +1,6 @@
 git config --global core.autocrlf true
+
+======================================================
+
+To-Do 
+make column scrollable, should not increase screen height -- not needed rn

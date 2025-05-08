@@ -3,7 +3,7 @@ import Task from './Task'
 
 const Column = (props) => {
   return (
-    <div className="flex flex-col bg-[#18191B] min-h-120 text-white w-1/6 rounded-sm overflow-y-scroll no-scrollbar">
+    <div className="flex flex-col bg-[#18191B] min-h-120 text-white w-1/6 rounded-sm">
         <h3 className="text-xs text-gray-400 uppercase py-2 px-3 mb-1">
           {props.title}
           {props.tasks.length>0 && <div className='text-[#18191B] inline-block bg-white text-xs mx-1 px-2 mb-1'>

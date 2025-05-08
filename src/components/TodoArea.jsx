@@ -91,6 +91,7 @@ const TodoArea = () => {
       <Column title={"In Progress"} tasks={in_progress_tasks}/>
       <Column title={"Not Proceeding"} tick={true} tasks={not_proceeding_tasks}/>
       <Column title={"Closed"} tick={true} tasks={closed_tasks}/>
+      <img src="/assets/plus.svg" className='h-8 p-1.5 border border-gray-700 rounded-sm shadow-2xl'/>
       
       
     </div>
