@@ -4,6 +4,7 @@ import UserIcons from '../components/UserIcons'
 import DropDown from '../components/DropDown'
 import {type_options,group_options} from "../contants/index"
 import Options from '../components/Options'
+import TodoArea from '../components/TodoArea'
 
 const Board = () => {
   return (
@@ -22,16 +23,13 @@ const Board = () => {
           <DropDown text = "Group" options={group_options}/>
           <img className='h-8 p-1 border border-gray-700 rounded-sm shadow-2xl' src="/assets/slider.svg" alt="slider icon"/>
           <img className='h-8 p-1 border border-gray-700 rounded-sm shadow-2xl' src="/assets/graph-increase.svg" alt="graph-increase icon"/>
-          {/* <img className='h-8 p-1.5 border border-gray-700 rounded-sm shadow-2xl' src="/assets/options.svg" alt="sprint options icon"/> */}
           <Options/>
         </div>
+
       </div>
 
+      <TodoArea/>
 
-      {/* Tasks area */}
-      <div className='flex flex-row justify-between w-full'>
-        
-      </div>
     </div>
   )
 }
