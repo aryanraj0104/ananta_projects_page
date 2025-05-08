@@ -59,6 +59,32 @@ input:-internal-autofill-selected {
   caret-color: #99A1AF;
 }
 
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; /* for horizontal scroll */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle thumb */
+  border-radius: 9999px;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
 @layer utilities {
   .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
@@ -69,5 +95,12 @@ input:-internal-autofill-selected {
   }
   .custom-scrollbar::-webkit-scrollbar-track {
     background: transparent;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

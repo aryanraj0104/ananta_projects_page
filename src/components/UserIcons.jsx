@@ -14,7 +14,7 @@ const users = [
   {
     id: 3,
     name: "User 3",
-    avatar: "https://i.pravatar.cc",
+    avatar: "https://avatar.iran.liara.run/public/boy",
   },
 ];
 
