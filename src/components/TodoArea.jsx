@@ -47,7 +47,7 @@ const TodoArea = () => {
                 </div>}
                 {/* text fieid area */}
                 {isOpen && <div className='focus:outline-[#629DF0]'><form className="flex flex-col p-2.5 bg-[#252527] rounded-sm focus:border-[#629DF0]">
-                    <textarea type='text' className='max-h-8 h-12 focus:outline-none border-0 text-wrap text-sm w-2/3 placeholder-gray-500 resize-none' placeholder='What needs to be done?' ref={task}/>
+                    <textarea type='text' className='max-h-8 h-12 focus:outline-none border-0 text-wrap text-sm w-2/3 placeholder-gray-500 resize-none custom-scrollbar overflow-auto' placeholder='What needs to be done?' ref={task}/>
                     <div className='flex flex-row mt-4 justify-between'>
                         <div className='flex-row flex'>
                             <img src="/assets/green-bookmark.svg" className='h-4 mt-0.5'/>

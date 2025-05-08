@@ -58,3 +58,16 @@ input:-internal-autofill-selected {
   -webkit-text-fill-color: #99A1AF !important;
   caret-color: #99A1AF;
 }
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1); /* subtle */
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
